@@ -14,6 +14,8 @@ public class EmployeeController {
     @Autowired
     private EmployeeServices employeeServiceImpl;
 
+
+
     @GetMapping("/getAll")
     public String viewHomePage(Model model) {
         model.addAttribute("allemplist", employeeServiceImpl.getAllEmployee());
